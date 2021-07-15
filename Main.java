@@ -99,16 +99,9 @@ public class Main {
             }
         }
 
-        // check diagonal
-        if (field[0][0] == field[1][1] && field[1][1] == field[2][2]) {
-            if (field[0][0] == 'X') {
-                isXWins = true;
-            } else if (field[0][0] == 'O') {
-                isOWins = true;
-            }
-        }
-        // check side diagonal
-        if (field[0][2] == field[1][1] && field[1][1] == field[2][0]) {
+        // check 2 diagonals
+        if (field[0][0] == field[1][1] && field[1][1] == field[2][2] 
+            || field[0][2] == field[1][1] && field[1][1] == field[2][0]) {
             if (field[1][1] == 'X') {
                 isXWins = true;
             } else if (field[1][1] == 'O') {
