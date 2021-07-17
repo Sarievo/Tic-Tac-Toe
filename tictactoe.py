@@ -56,19 +56,8 @@ def check_state(f2):
         return 0
     return 1
 
-
-# s = input("Enter cells: ")
-# s1 = []
-# for i in range(len(s)):
-#     if s[i] != 'X' and s[i] != 'O':
-#         s1 += ' '
-#     else:
-#         s1 += s[i]
-
-# field = [[s1[0], s1[1], s1[2]], [s1[3], s1[4], s1[5]], [s1[6], s1[7], s1[8]]]
 field = [[' ' for _ in range(3)] for _ in range(3)]
 print_field(field)
-# check_state(field)
 
 is_X_turn = True
 while True:
